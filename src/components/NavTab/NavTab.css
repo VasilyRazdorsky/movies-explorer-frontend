@@ -18,6 +18,11 @@
     line-height: 16px;
     color: #fff;
     text-decoration: underline;
+    transition: all .3s ease-in;
+}
+
+.nav-tab__link:hover {
+    opacity: .7;
 }
 
 @media screen and (max-width: 1280px) {
