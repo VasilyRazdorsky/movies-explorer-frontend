@@ -6,9 +6,11 @@ const Main = ({currentPage}) => {
     return (
         <>
             <Header currentPage={currentPage}/>
-            <Promo />
-            <NavTab />
-            <AboutProject />
+            <main className="page__content">
+                <Promo />
+                <NavTab />
+                <AboutProject />
+            </main>
         </>
     );
 }
