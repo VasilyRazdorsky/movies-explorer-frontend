@@ -1,5 +1,5 @@
-const Divider = (isFooter) => {
-    return <div className={`divider ${isFooter && "divider_place_footer"}`}></div>
+const Divider = (isGray) => {
+    return <div className={`divider ${isGray && "divider_color_gray"}`}></div>
 }
 
 export default Divider;
