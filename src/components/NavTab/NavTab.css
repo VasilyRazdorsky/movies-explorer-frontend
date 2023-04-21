@@ -18,6 +18,7 @@
     line-height: 16px;
     color: #fff;
     text-decoration: underline;
+    cursor: pointer;
     transition: all .3s ease-in;
 }
 
