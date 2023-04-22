@@ -4,6 +4,7 @@
 
 .about-me__title {
     margin: 0;
+    margin-bottom: 23px;
     font-weight: 400;
     font-size: 22px;
     line-height: 27px;
@@ -104,6 +105,7 @@
     .about-me__title {
         font-size: 18px;
         line-height: 22px;
+        margin-bottom: 28px;
     }
 
     .about-me__info {
