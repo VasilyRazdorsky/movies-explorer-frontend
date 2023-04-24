@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import Form from "../Form/Form";
 
 const Login = ({currentPage}) => {
+
     return (
         <>
             <Header currentPage={currentPage} />
@@ -20,7 +21,6 @@ const Login = ({currentPage}) => {
                         type="email"
                         name="email"
                         id="email"
-                        onChange={console.log("change email")}
                         required
                     />
         
@@ -30,7 +30,6 @@ const Login = ({currentPage}) => {
                         type="password"
                         name="password"
                         id="password"
-                        onChange={console.log("change password")}
                         required
                      />
                     <span className="form__error">Что-то пошло не так...</span>

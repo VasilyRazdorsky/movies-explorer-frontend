@@ -3,7 +3,6 @@ const Form = ({ currentPage, submitButtonText, children }) => {
         <form
             action="#"
             className="form"
-            onSubmit={console.log('submit login')}
             noValidate
         >
             {children}

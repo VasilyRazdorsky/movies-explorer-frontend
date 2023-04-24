@@ -74,6 +74,10 @@
     margin-top: 157px;
 }
 
+.form__submit-button_action_register {
+    margin-top: 69px;
+}
+
 @media screen and (max-width: 540px) {
     .form {
         margin-top: 80px;
@@ -81,5 +85,9 @@
 
     .form__submit-button_action_login {
         margin-top: 245px;
+    }
+
+    .form__submit-button_action_register {
+        margin-top: 157px;
     }
 }
