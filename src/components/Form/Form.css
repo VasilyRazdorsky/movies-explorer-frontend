@@ -11,7 +11,7 @@
 }
 
 .form__label:not(:first-of-type){
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .form__input {
@@ -35,7 +35,7 @@
 
 .form__error {
     visibility: hidden;
-    margin-top: 10px;
+    margin-top: 5px;
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;

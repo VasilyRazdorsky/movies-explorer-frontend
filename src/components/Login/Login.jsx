@@ -23,6 +23,7 @@ const Login = ({currentPage}) => {
                         id="email"
                         required
                     />
+                    <span className="form__error">Что-то пошло не так...</span>
         
                     <label htmlFor="password" className="form__label">Пароль</label>
                     <input 

@@ -22,6 +22,7 @@ const Register = ({currentPage}) => {
                         id="name"
                         required
                     />
+                    <span className="form__error">Что-то пошло не так...</span>
 
                     <label htmlFor="email" className="form__label">E-mail</label>
                     <input 
@@ -31,6 +32,7 @@ const Register = ({currentPage}) => {
                         id="email"
                         required
                     />
+                    <span className="form__error">Что-то пошло не так...</span>
         
                     <label htmlFor="password" className="form__label">Пароль</label>
                     <input 
