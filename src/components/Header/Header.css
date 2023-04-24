@@ -5,6 +5,13 @@
     justify-content: space-between;
 }
 
+.header_route_login {
+    max-width: 396px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
 .header_theme_dark {
     background-color: #073042;
 }
@@ -23,14 +30,27 @@
     padding: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .header {
         padding: 15px 30px;
     }
+
+    .header_route_login {
+        padding-top: 232px;
+    }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 540px) {
     .header {
         padding: 15px 14px;
     }
+
+    .header_route_login {
+        max-width: 260px;
+        margin: 0 auto;
+        padding-top: 56px;
+        padding-bottom: 50px;
+        justify-content: center;
+    }
 }
+

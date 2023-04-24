@@ -1,0 +1,133 @@
+.login {
+    max-width: 396px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+.login__title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.login__form {
+    margin-top: 40px;
+}
+
+.login__label {
+    display: block;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #A0A0A0;
+}
+
+.login__label:not(:first-of-type){
+    margin-top: 20px;
+}
+
+.login__input {
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #F9F9F9;
+    border-radius: 8px;
+    outline:none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.login__input_error {
+    color: #FF3055;
+    caret-color: #000;
+}
+
+.form__error {
+    visibility: hidden;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FF3055;
+}
+
+.form__error_visible {
+    visibility: visible;
+}
+
+.login__submit-button {
+    width: 100%;
+    padding: 13px 0 15px 0;
+    border: none;
+    background-color: #3456F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.login__submit-button:hover {
+    opacity: .8;
+}
+
+.login__submit-button-action-login {
+    margin-top: 157px;
+}
+
+.login__redirect-text {
+    margin: 0;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #A0A0A0;
+}
+
+.login__redirect-link {
+    text-decoration: none;
+    color: #3456F3;
+    transition: all .3s ease-in;
+}
+
+.login__redirect-link:hover {
+    opacity: .7;
+}
+
+@media screen and (max-width: 1024px) {
+    .login {
+        padding-bottom: 232px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .login {
+        max-width: 260px;
+        padding-bottom: 30px;
+    }
+
+    .login__title {
+        text-align: center;
+    }
+
+    .login__form {
+        margin-top: 80px;
+    }
+
+    .login__submit-button-action-login {
+        margin-top: 245px;
+    }
+
+    .login__redirect-text {
+        margin-top: 14px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
