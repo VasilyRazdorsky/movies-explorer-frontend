@@ -1,8 +1,14 @@
 import Header from "../Header/Header";
 import Form from "../Form/Form";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
+import useFormValidation from "../../hooks/useFormValidation";
 
 const Register = ({currentPage}) => {
+    const { handleInputChange, isFormValid } = useFormValidation();
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
+
     return(
         <>
             <Header currentPage={currentPage} />
@@ -12,6 +18,8 @@ const Register = ({currentPage}) => {
                 <Form
                     currentPage={currentPage}
                     submitButtonText="Зарегистрироваться"
+                    isValid={isFormValid}
+                    handleSubmit={handleSubmit}
                     children={
                     <>
                     <label htmlFor="name" className="form__label">Имя</label>
@@ -21,6 +29,9 @@ const Register = ({currentPage}) => {
                         name="name"
                         id="name"
                         required
+                        minLength="2"
+                        maxLength="30"
+                        onChange={handleInputChange}
                     />
                     <span className="form__error">Что-то пошло не так...</span>
 
@@ -31,6 +42,9 @@ const Register = ({currentPage}) => {
                         name="email"
                         id="email"
                         required
+                        minLength="2"
+                        maxLength="64"
+                        onChange={handleInputChange}
                     />
                     <span className="form__error">Что-то пошло не так...</span>
         
@@ -41,6 +55,9 @@ const Register = ({currentPage}) => {
                         name="password"
                         id="password"
                         required
+                        minLength="2"
+                        maxLength="40"
+                        onChange={handleInputChange}
                      />
                     <span className="form__error">Что-то пошло не так...</span>
                     </>

@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 import Header from "../Header/Header";
 import Form from "../Form/Form";
+import useFormValidation from "../../hooks/useFormValidation";
 
 const Login = ({currentPage}) => {
+    const { handleInputChange, isFormValid } = useFormValidation();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
 
     return (
         <>
@@ -13,6 +19,8 @@ const Login = ({currentPage}) => {
                 <Form
                     currentPage={currentPage}
                     submitButtonText="Войти"
+                    isValid={isFormValid}
+                    handleSubmit={handleSubmit}
                     children={
                     <>
                     <label htmlFor="email" className="form__label">E-mail</label>
@@ -22,6 +30,9 @@ const Login = ({currentPage}) => {
                         name="email"
                         id="email"
                         required
+                        minLength="2"
+                        maxLength="64"
+                        onChange={handleInputChange}
                     />
                     <span className="form__error">Что-то пошло не так...</span>
         
@@ -32,6 +43,9 @@ const Login = ({currentPage}) => {
                         name="password"
                         id="password"
                         required
+                        minLength="2"
+                        maxLength="40"
+                        onChange={handleInputChange}
                      />
                     <span className="form__error">Что-то пошло не так...</span>
                     </>
