@@ -20,6 +20,10 @@
     opacity: .7;
 }
 
+.navigation__link_authorized {
+    color: #fff;
+}
+
 .navigation__link_active {
     font-weight: 500;
 }

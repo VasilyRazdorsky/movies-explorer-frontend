@@ -2,7 +2,7 @@ import logoPath from "../../images/main-logo.svg";
 import Navigation from "../Navigation/Navigation";
 import { Link } from "react-router-dom";
 
-const Header = ({currentPage}) => {
+const Header = ({currentPage, isAuthorized}) => {
   const pagesWithNavigation = ["/", "/profile", "/saved-movies", "/movies"];
 
   return (
@@ -12,7 +12,7 @@ const Header = ({currentPage}) => {
       </Link>
       
       {pagesWithNavigation.includes(currentPage.pathname) && <>
-        <Navigation currentPage={currentPage}/>
+        <Navigation currentPage={currentPage} isAuthorized={isAuthorized}/>
       </>}
     </header>
   );

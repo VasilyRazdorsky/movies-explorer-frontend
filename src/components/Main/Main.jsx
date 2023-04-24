@@ -7,10 +7,10 @@ import AboutMe from "../AboutMe/AboutMe";
 import Portfolio from "../Portfolio/Portfolio";
 import Footer from "../Footer/Footer";
 
-const Main = ({currentPage}) => {
+const Main = ({currentPage, isAuthorized}) => {
     return (
         <>
-            <Header currentPage={currentPage}/>
+            <Header currentPage={currentPage} isAuthorized={isAuthorized}/>
             <Promo />
             <NavTab />
             <AboutProject />

@@ -7,8 +7,10 @@ import Profile from "../Profile/Profile";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
 import Error404 from "../Error404/Error404";
+import { useState } from "react";
 
 function App() {
+  const [isAuthorized, setIsAuthorized] = useState(false);
   const currentPage = useLocation();
   return (
     <>
@@ -29,7 +31,7 @@ function App() {
           <Movies currentPage={currentPage}/>
         </Route>
         <Route exact path="/">
-          <Main currentPage={currentPage}/>
+          <Main currentPage={currentPage} isAuthorized={isAuthorized}/>
         </Route>
         <Route path="*">
           <Error404 />
