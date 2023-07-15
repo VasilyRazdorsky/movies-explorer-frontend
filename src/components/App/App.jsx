@@ -10,7 +10,7 @@ import Error404 from "../Error404/Error404";
 import { useState } from "react";
 
 function App() {
-  const [isAuthorized, setIsAuthorized] = useState(false);
+  const [isAuthorized, setIsAuthorized] = useState(true);
   const currentPage = useLocation();
   return (
     <>
