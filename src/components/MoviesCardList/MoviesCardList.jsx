@@ -19,7 +19,5 @@ export default function MoviesCardList() {
             <div className="card"></div>
             <div className="card"></div>
         </div>
-
-        <button className="movies-list__more-button">Ещё</button>
     </section>
 }

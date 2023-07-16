@@ -1,5 +1,5 @@
 .movies-list {
-    padding: 70px 70px 80px 70px;
+    padding: 70px 70px 0 70px;
 }
 
 .movies-list__cards-container {
@@ -15,27 +15,9 @@
     background-color: green;
 }
 
-.movies-list__more-button {
-    margin-top: 80px;
-    width: 100%;
-    border:none;
-    border-radius: 6px;
-    padding: 10px 0;
-    background-color: #F9F9F9;
-    font-size: 12px;
-    line-height: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: opacity .3s ease-in;
-}
-
-.movies-list__more-button:hover {
-    opacity: .8;
-}
-
 @media screen and (max-width: 1024px) {
     .movies-list {
-        padding: 70px 30px 80px 30px;
+        padding: 70px 30px 0 30px;
     }
 
     .movies-list__cards-container {
@@ -51,7 +33,7 @@
 
 @media screen and (max-width: 544px) {
     .movies-list {
-        padding: 40px 10px 80px 10px;
+        padding: 40px 10px 0 10px;
     }
 
     .movies-list__cards-container {
