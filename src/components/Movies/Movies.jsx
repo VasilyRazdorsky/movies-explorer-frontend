@@ -9,7 +9,7 @@ const Movies = ({ currentPage }) => {
 		<>
 			<Header currentPage={currentPage} />
 			<Search />
-			<MoviesCardList />
+			<MoviesCardList currentPage={currentPage} />
 			<More />
 			<Footer />
 		</>

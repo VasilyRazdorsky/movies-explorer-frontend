@@ -43,7 +43,6 @@
 	height: 16px;
 	border: 2px solid #fff;
 	border-radius: 50%;
-	transform: translateY(2px);
 	display: grid;
 	place-content: center;
 	cursor: pointer;
@@ -74,6 +73,26 @@
 	line-height: normal;
 }
 
+.card__delete-button {
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	border: none;
+	background-color: transparent;
+	transition: opacity 0.3s ease-in;
+	cursor: pointer;
+}
+
+.card__delete-button:hover {
+	opacity: 0.8;
+}
+
+.card__delete-icon {
+	display: block;
+	width: 8px;
+	height: 8px;
+	object-fit: contain;
+}
 @media screen and (max-width: 1024px) {
 	.card {
 		width: 339px;

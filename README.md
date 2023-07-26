@@ -1,1 +1,5 @@
 # movies-explorer-frontend
+
+---
+
+ссылка на макет: https://docviewer.yandex.ru/view/704471287/?*=0ERok7tAYG9xKdggdfV2ARQosrB7InVybCI6InlhLWRpc2s6Ly8vZGlzay9EaXBsb21hLmZpZyIsInRpdGxlIjoiRGlwbG9tYS5maWciLCJub2lmcmFtZSI6ZmFsc2UsInVpZCI6IjcwNDQ3MTI4NyIsInRzIjoxNjkwMzg1MjA0NDEzLCJ5dSI6IjU5NTgwMzUxODE2MjMzMDcwODYifQ%3D%3D
