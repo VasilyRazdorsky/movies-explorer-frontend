@@ -1,18 +1,19 @@
-import Header from "../Header/Header";
-import Search from "../Search/Search";
-import MoviesCardList from "../MoviesCardList/MoviesCardList";
-import More from "../More/More";
+import Header from '../Header/Header';
+import Search from '../Search/Search';
+import MoviesCardList from '../MoviesCardList/MoviesCardList';
+import More from '../More/More';
+import Footer from '../Footer/Footer';
 
 const Movies = ({ currentPage }) => {
-    return ( 
-        <>
-            <Header currentPage={currentPage} />
-            <Search />
-            <MoviesCardList />
-            <More />
-        </>
-        
-    );
-}
+	return (
+		<>
+			<Header currentPage={currentPage} />
+			<Search />
+			<MoviesCardList />
+			<More />
+			<Footer />
+		</>
+	);
+};
 
 export default Movies;

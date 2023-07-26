@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import posterImagePath from '../../images/poster-image.png';
+import posterImagePath from '../../images/poster-image.jpg';
 
 export default function MoviesCard() {
 	const [filmAdded, setFilmAdded] = useState(false);
