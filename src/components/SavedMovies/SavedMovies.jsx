@@ -5,12 +5,12 @@ import Footer from '../Footer/Footer';
 
 const SavedMovies = ({ currentPage }) => {
 	return (
-		<>
+		<main>
 			<Header currentPage={currentPage} />
 			<Search />
 			<MoviesCardList currentPage={currentPage} />
 			<Footer />
-		</>
+		</main>
 	);
 };
 

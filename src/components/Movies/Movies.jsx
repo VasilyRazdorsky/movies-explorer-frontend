@@ -6,13 +6,13 @@ import Footer from '../Footer/Footer';
 
 const Movies = ({ currentPage }) => {
 	return (
-		<>
+		<main>
 			<Header currentPage={currentPage} />
 			<Search />
 			<MoviesCardList currentPage={currentPage} />
 			<More />
 			<Footer />
-		</>
+		</main>
 	);
 };
 

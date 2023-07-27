@@ -1,4 +1,4 @@
-.more__container {
+.more {
 	padding: 0 70px 80px 70px;
 }
 
@@ -21,13 +21,13 @@
 }
 
 @media screen and (max-width: 1024px) {
-	.more__container {
+	.more {
 		padding: 0 30px 80px 30px;
 	}
 }
 
 @media screen and (max-width: 544px) {
-	.more__container {
+	.more {
 		padding: 0 10px 80px 10px;
 	}
 }

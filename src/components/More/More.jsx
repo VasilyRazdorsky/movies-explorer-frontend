@@ -1,6 +1,6 @@
 export default function More() {
 	return (
-		<section className="more__container">
+		<section className="more">
 			<button className="more__button">Ещё</button>
 		</section>
 	);

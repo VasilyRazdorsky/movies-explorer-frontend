@@ -1,4 +1,11 @@
+import { useHistory } from 'react-router-dom';
+
 const Error404 = () => {
+	const history = useHistory();
+
+	function handleGoBack() {
+		history.goBack();
+	}
 	return (
 		<main className="error">
 			<div className="error__text-block">
@@ -6,7 +13,9 @@ const Error404 = () => {
 				<p className="error__subtitle">Страница не найдена</p>
 			</div>
 
-			<button className="error__return-button">Назад</button>
+			<button className="error__return-button" onClick={handleGoBack}>
+				Назад
+			</button>
 		</main>
 	);
 };

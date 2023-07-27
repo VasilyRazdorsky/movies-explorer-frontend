@@ -1,56 +1,60 @@
 .header {
-    padding: 18px 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	padding: 18px 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .header_route_login {
-    max-width: 396px;
-    margin: 0 auto;
-    padding-top: 70px;
-    padding-bottom: 40px;
+	max-width: 396px;
+	margin: 0 auto;
+	padding-top: 70px;
+	padding-bottom: 40px;
 }
 
 .header_theme_dark {
-    background-color: #073042;
+	background-color: #073042;
 }
 
 .header__logo {
-    width: 38px;
-    height: 38px;
+	width: 38px;
+	height: 38px;
+	transition: opacity 0.3s ease-in;
+}
+
+.header__logo:hover {
+	opacity: 0.8;
 }
 
 .header__logo-link {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .header__navigation {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 @media screen and (max-width: 1024px) {
-    .header {
-        padding: 15px 30px;
-    }
+	.header {
+		padding: 15px 30px;
+	}
 
-    .header_route_login {
-        padding-top: 232px;
-    }
+	.header_route_login {
+		padding-top: 232px;
+	}
 }
 
 @media screen and (max-width: 540px) {
-    .header {
-        padding: 15px 14px;
-    }
+	.header {
+		padding: 15px 14px;
+	}
 
-    .header_route_login {
-        max-width: 260px;
-        margin: 0 auto;
-        padding-top: 56px;
-        padding-bottom: 50px;
-        justify-content: center;
-    }
+	.header_route_login {
+		max-width: 260px;
+		margin: 0 auto;
+		padding-top: 56px;
+		padding-bottom: 50px;
+		justify-content: center;
+	}
 }
-
