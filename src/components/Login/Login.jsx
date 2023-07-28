@@ -4,7 +4,7 @@ import Form from '../Form/Form';
 import useFormValidation from '../../hooks/useFormValidation';
 
 const Login = ({ currentPage }) => {
-	const { handleInputChange, isFormValid } = useFormValidation();
+	const { handleInputChange, isFormValid } = useFormValidation(false);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -35,6 +35,7 @@ const Login = ({ currentPage }) => {
 								minLength="2"
 								maxLength="64"
 								onChange={handleInputChange}
+								placeholder="Почта"
 							/>
 							<span className="form__error">Что-то пошло не так...</span>
 
@@ -50,6 +51,7 @@ const Login = ({ currentPage }) => {
 								minLength="2"
 								maxLength="40"
 								onChange={handleInputChange}
+								placeholder="Пароль"
 							/>
 							<span className="form__error">Что-то пошло не так...</span>
 						</>

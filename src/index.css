@@ -4,7 +4,6 @@
 @import url('./components/Header/Header.css');
 @import url('./components/Navigation/Navigation.css');
 @import url('./components/BurgerMenu/BurgerMenu.css');
-@import url('./components/Divider/Divider.css');
 @import url('./components/Promo/Promo.css');
 @import url('./components/NavTab/NavTab.css');
 @import url('./components/AboutProject/AboutProject.css');
@@ -21,3 +20,6 @@
 @import url('./components/MoviesCard/MoviesCard.css');
 @import url('./components/More/More.css');
 @import url('./components/Error404/Error404.css');
+@import url('./components/Movies/Movies.css');
+@import url('./components/SavedMovies/SavedMovies.css');
+@import url('./components/Main/Main.css');

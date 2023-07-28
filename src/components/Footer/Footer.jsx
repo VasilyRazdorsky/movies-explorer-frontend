@@ -1,5 +1,3 @@
-import Divider from '../Divider/Divider';
-
 const Footer = () => {
 	const date = new Date();
 
@@ -9,26 +7,29 @@ const Footer = () => {
 				Учебный проект Яндекс.Практикум х BeatFilm.
 			</p>
 
-			<Divider isGray={true} />
-
 			<div className="footer__contacts">
 				<p className="footer__year">© {date.getFullYear()}</p>
-				<div className="footer__links">
-					<a
-						href="https://practicum.yandex.ru/"
-						className="footer__link"
-						target="blank"
-					>
-						Яндекс.Практикум
-					</a>
-					<a
-						href="https://github.com/VasilyRazdorsky"
-						className="footer__link footer__link_action_github"
-						target="blank"
-					>
-						Github
-					</a>
-				</div>
+				<ul className="footer__links">
+					<li>
+						<a
+							href="https://practicum.yandex.ru/"
+							className="footer__link"
+							target="blank"
+						>
+							Яндекс.Практикум
+						</a>
+					</li>
+
+					<li>
+						<a
+							href="https://github.com/VasilyRazdorsky"
+							className="footer__link footer__link_action_github"
+							target="blank"
+						>
+							Github
+						</a>
+					</li>
+				</ul>
 			</div>
 		</footer>
 	);

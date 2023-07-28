@@ -2,7 +2,7 @@ import { useState } from 'react';
 import posterImagePath from '../../images/poster-image.jpg';
 import deleteIconPath from '../../images/delete-icon.svg';
 
-export default function MoviesCard({ currentPage }) {
+export default function MoviesCard({ currentPage, posterAlt }) {
 	const [filmAdded, setFilmAdded] = useState(false);
 
 	function handleFilmCheck() {
@@ -10,14 +10,10 @@ export default function MoviesCard({ currentPage }) {
 	}
 	return (
 		<div className="card">
-			<img
-				src={posterImagePath}
-				alt="Постер к фильму"
-				className="card__poster"
-			/>
+			<img src={posterImagePath} alt={posterAlt} className="card__poster" />
 			<div className="card__info-block">
 				<div className="card__main-info">
-					<p className="card__film-name">33 слова о дизайне</p>
+					<h2 className="card__film-name">33 слова о дизайне</h2>
 					{currentPage.pathname === '/saved-movies' ? (
 						<button className="card__delete-button">
 							<img

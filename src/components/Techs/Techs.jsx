@@ -1,11 +1,8 @@
-import Divider from '../Divider/Divider';
-
 const Techs = () => {
 	return (
 		<section className="techs" id="techs">
 			<div className="techs__title-container">
 				<h2 className="techs__title">Технологии</h2>
-				<Divider isGray={false} />
 			</div>
 
 			<h3 className="techs__subtitle">7 технологий</h3>
@@ -14,15 +11,15 @@ const Techs = () => {
 				дипломном проекте.
 			</p>
 
-			<div className="techs__cards">
-				<div className="techs__card">HTML</div>
-				<div className="techs__card">CSS</div>
-				<div className="techs__card">JS</div>
-				<div className="techs__card">React</div>
-				<div className="techs__card">Git</div>
-				<div className="techs__card">Express.js</div>
-				<div className="techs__card">mongoDB</div>
-			</div>
+			<ul className="techs__cards">
+				<li className="techs__card">HTML</li>
+				<li className="techs__card">CSS</li>
+				<li className="techs__card">JS</li>
+				<li className="techs__card">React</li>
+				<li className="techs__card">Git</li>
+				<li className="techs__card">Express.js</li>
+				<li className="techs__card">mongoDB</li>
+			</ul>
 		</section>
 	);
 };

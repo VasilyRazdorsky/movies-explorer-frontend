@@ -1,10 +1,15 @@
 import Header from '../Header/Header';
-import Divider from '../Divider/Divider';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import useFormValidation from '../../hooks/useFormValidation';
 
 const Profile = ({ currentPage }) => {
 	const history = useHistory();
+
+	const { handleInputChange, isFormValid } = useFormValidation({
+		name: 'Василий',
+		email: 'pochta@yandex.ru',
+	});
 
 	const handleExitButtonClick = () => {
 		history.push('/');
@@ -39,11 +44,13 @@ const Profile = ({ currentPage }) => {
 								isFormActive && 'profile__input_active'
 							}`}
 							disabled={!isFormActive}
-							value="Василий"
+							defaultValue="Василий"
+							minLength="2"
+							maxLength="30"
+							onChange={handleInputChange}
+							placeholder="Имя"
 						/>
 					</div>
-
-					<Divider isGray={true} />
 
 					<div className="profile__input-block">
 						<label htmlFor="email" className="profile__label">
@@ -56,8 +63,12 @@ const Profile = ({ currentPage }) => {
 							className={`profile__input profile__input_action_email ${
 								isFormActive && 'profile__input_active'
 							}`}
+							minLength="2"
+							maxLength="64"
 							disabled={!isFormActive}
-							value="pochta@yandex.ru"
+							defaultValue="pochta@yandex.ru"
+							onChange={handleInputChange}
+							placeholder="Почта"
 						/>
 					</div>
 
@@ -72,8 +83,10 @@ const Profile = ({ currentPage }) => {
 							</p>
 							<button
 								type="submit"
-								disabled={!isFormActive}
-								className={`profile__submit-button`}
+								disabled={!isFormValid}
+								className={`profile__submit-button ${
+									!isFormValid && 'profile__submit-button_disabled'
+								}`}
 							>
 								Сохранить
 							</button>

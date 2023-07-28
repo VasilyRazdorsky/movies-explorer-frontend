@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import useFormValidation from '../../hooks/useFormValidation';
 
 const Register = ({ currentPage }) => {
-	const { handleInputChange, isFormValid } = useFormValidation();
+	const { handleInputChange, isFormValid } = useFormValidation(true, true);
 	const handleSubmit = (e) => {
 		e.preventDefault();
 	};
@@ -34,6 +34,7 @@ const Register = ({ currentPage }) => {
 								minLength="2"
 								maxLength="30"
 								onChange={handleInputChange}
+								placeholder="Имя"
 							/>
 							<span className="form__error">Что-то пошло не так...</span>
 
@@ -49,6 +50,7 @@ const Register = ({ currentPage }) => {
 								minLength="2"
 								maxLength="64"
 								onChange={handleInputChange}
+								placeholder="Почта"
 							/>
 							<span className="form__error">Что-то пошло не так...</span>
 
@@ -64,6 +66,7 @@ const Register = ({ currentPage }) => {
 								minLength="2"
 								maxLength="40"
 								onChange={handleInputChange}
+								placeholder="Пароль"
 							/>
 							<span className="form__error">Что-то пошло не так...</span>
 						</>

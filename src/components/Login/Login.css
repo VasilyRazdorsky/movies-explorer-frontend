@@ -1,54 +1,56 @@
 .login {
-    max-width: 396px;
-    margin: 0 auto;
-    padding-bottom: 70px;
+	max-width: 396px;
+	margin: 0 auto;
+	padding-bottom: 70px;
+	display: flex;
+	flex-direction: column;
 }
 
 .login__title {
-    margin: 0;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
+	margin: 0;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
 }
 
 .login__redirect-text {
-    margin: 0;
-    margin-top: 16px;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: #A0A0A0;
+	margin: 0;
+	margin-top: 16px;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	color: #a0a0a0;
 }
 
 .login__redirect-link {
-    text-decoration: none;
-    color: #3456F3;
-    transition: all .3s ease-in;
+	text-decoration: none;
+	color: #3456f3;
+	transition: all 0.3s ease-in;
 }
 
 .login__redirect-link:hover {
-    opacity: .7;
+	opacity: 0.7;
 }
 
 @media screen and (max-width: 1024px) {
-    .login {
-        padding-bottom: 232px;
-    }
+	.login {
+		padding-bottom: 232px;
+	}
 }
 
 @media screen and (max-width: 540px) {
-    .login {
-        max-width: 260px;
-        padding-bottom: 30px;
-    }
+	.login {
+		max-width: 260px;
+		padding-bottom: 30px;
+	}
 
-    .login__title {
-        text-align: center;
-    }
+	.login__title {
+		text-align: center;
+	}
 
-    .login__redirect-text {
-        margin-top: 14px;
-        font-size: 12px;
-        line-height: 15px;
-    }
+	.login__redirect-text {
+		margin-top: 14px;
+		font-size: 12px;
+		line-height: 15px;
+	}
 }

@@ -1,4 +1,3 @@
-import Divider from '../Divider/Divider';
 import FilterCheckbox from '../FilterCheckbox/FilterCheckbox';
 
 export default function Search() {
@@ -24,8 +23,6 @@ export default function Search() {
 					<p className="search__filter-name">Короткометражки</p>
 				</div>
 			</form>
-
-			<Divider isGray={true} />
 		</section>
 	);
 }
