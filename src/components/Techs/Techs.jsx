@@ -3,8 +3,10 @@ import Divider from '../Divider/Divider';
 const Techs = () => {
 	return (
 		<section className="techs" id="techs">
-			<h2 className="techs__title">Технологии</h2>
-			<Divider isGray={false} />
+			<div className="techs__title-container">
+				<h2 className="techs__title">Технологии</h2>
+				<Divider isGray={false} />
+			</div>
 
 			<h3 className="techs__subtitle">7 технологий</h3>
 			<p className="techs__text">
