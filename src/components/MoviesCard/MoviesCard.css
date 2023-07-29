@@ -1,0 +1,129 @@
+.card {
+	width: 270px;
+	height: 218px;
+	border-radius: 10px;
+	background-color: #fdfdfd;
+	box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.05);
+}
+
+.card__poster {
+	display: block;
+	width: 100%;
+	height: 151px;
+	object-fit: cover;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.card__info-block {
+	box-sizing: border-box;
+	width: 100%;
+	height: 67px;
+	padding: 14px 16px;
+}
+
+.card__main-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card__film-name {
+	margin: 0;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.card__input-switch {
+	transition: opacity 0.3s ease-in;
+}
+
+.card__input-switch:hover {
+	opacity: 0.8;
+}
+
+.card__input {
+	appearance: none;
+	background-color: #f9f9f9;
+	margin: 0;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	display: grid;
+	place-content: center;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.09);
+}
+
+.card__input::before {
+	content: '';
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	transform: scale(0);
+	transition: 0.3s transform ease-in-out;
+	background-color: #2be080;
+}
+
+.card__input:checked::before {
+	transform: scale(1);
+}
+
+.card__film-duration {
+	margin: 0;
+	margin-top: 10px;
+	color: #a0a0a0;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.card__delete-button {
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	border: none;
+	background-color: transparent;
+	transition: opacity 0.3s ease-in;
+	cursor: pointer;
+}
+
+.card__delete-button:hover {
+	opacity: 0.8;
+}
+
+.card__delete-icon {
+	display: block;
+	width: 8px;
+	height: 8px;
+	object-fit: contain;
+}
+@media screen and (max-width: 1024px) {
+	.card {
+		width: 339px;
+		height: 257px;
+	}
+
+	.card__poster {
+		height: 190px;
+	}
+
+	.card__info-block {
+		height: 67px;
+		padding: 14px 12px;
+	}
+}
+
+@media screen and (max-width: 544px) {
+	.card {
+		width: 300px;
+		height: 235px;
+	}
+
+	.card__poster {
+		height: 168px;
+	}
+}

@@ -1,0 +1,88 @@
+.nav-tab {
+	padding: 24px 0;
+	background-color: #000;
+}
+
+.nav-tab__container {
+	width: fit-content;
+	margin: 0 auto;
+}
+
+.nav-tab__panel {
+	display: flex;
+}
+
+.nav-tab__link {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 16px;
+	color: #fff;
+	text-decoration: underline;
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+}
+
+.nav-tab__link:hover {
+	opacity: 0.7;
+}
+
+.nav-tab__link_action_about-project {
+	margin-right: 40px;
+}
+
+.nav-tab__link_action_about-me {
+	margin-left: 40px;
+}
+
+/* @media screen and (max-width: 1024px) {
+} */
+
+/* @media screen and (max-width: 1280px) {
+	.nav-tab__container {
+		padding: 0 450px;
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	.nav-tab__container {
+		padding: 0 350px;
+	}
+}
+
+@media screen and (max-width: 970px) {
+	.nav-tab {
+		padding: 25px 0;
+	}
+
+	.nav-tab__container {
+		padding: 0 246px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.nav-tab {
+		padding: 25px 0;
+	}
+
+	.nav-tab__container {
+		padding: 0 150px;
+	}
+} */
+
+@media screen and (max-width: 540px) {
+	.nav-tab {
+		padding: 25px 0;
+	}
+
+	.nav-tab__link {
+		font-size: 11px;
+	}
+
+	.nav-tab__link_action_about-project {
+		margin-right: 24px;
+	}
+
+	.nav-tab__link_action_about-me {
+		margin-left: 24px;
+	}
+}
